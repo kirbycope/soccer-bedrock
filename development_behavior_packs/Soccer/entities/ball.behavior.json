@@ -1,0 +1,77 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "soccer:ball",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"components": {
+			"minecraft:breathable": {
+				"breathes_water": true
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "entity_attack",
+						"deals_damage": false,
+						"on_damage": {
+							"event": "attack",
+							"target": "self"
+						}
+					},
+					{
+						"cause": "all",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:interact": {
+				"interactions": [
+					{
+						"on_interact": {
+							"event": "interact",
+							"target": "self"
+						}
+					}
+				]
+			},
+			"minecraft:physics": {
+				"has_collision": true,
+				"has_gravity": true,
+				"push_towards_closest_space": true
+			},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:push_through": {
+				"value": 0.0
+			},
+			"minecraft:scale": {
+				"value": 0.5
+			}
+		},
+		"events": {
+			"attack": {
+				"sequence": [
+					{
+						"queue_command": {
+							"command": "say attacked!"
+						}
+					}
+				]
+			},
+			"interact": {
+				"sequence": [
+					{
+						"queue_command": {
+							"command": "say interacted!"
+						}
+					}
+				]
+			}
+		}
+	}
+}

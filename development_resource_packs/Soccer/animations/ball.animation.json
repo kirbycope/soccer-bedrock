@@ -1,0 +1,13 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.ball.roll": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": ["query.modified_distance_moved * 20", 0, 0]
+				}
+			}
+		}
+	}
+}

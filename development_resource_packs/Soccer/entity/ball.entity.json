@@ -1,0 +1,28 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "soccer:ball",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/ball"
+			},
+			"geometry": {
+				"default": "geometry.ball"
+			},
+			"render_controllers": ["controller.render.default"],
+			"animations": {
+				"roll": "animation.ball.roll"
+			},
+			"scripts": {
+				"animate": ["roll"]
+			},
+			"spawn_egg": {
+				"base_color": "#ffffff",
+				"overlay_color": "#000000"
+			}
+		}
+	}
+}
