@@ -5,7 +5,7 @@
 		"description": "Soccer Resource Pack",
 		"uuid": "1d7591fd-9ea1-f9ff-6cb2-674d19d1cfce",
 		"version": [1, 0, 0],
-		"min_engine_version": [1, 16, 0]
+		"min_engine_version": [1, 20, 1]
 	},
 	"metadata": {
 		"authors": ["Kirbycope"],
