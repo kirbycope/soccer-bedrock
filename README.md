@@ -4,7 +4,7 @@
 A soccer ball add-on for Minecraft Bedrock Edition.
 
 ## Installation
-1. Download the [mcaddon](https://github.com/kirbycope/soccer-bedrock/raw/main/soccer-bedrock.mcaddon)
+1. Download the [mcaddon](https://github.com/kirbycope/soccer-bedrock/releases/latest/download/soccer-bedrock.mcaddon)
 1. Double-click the `.mcaddon` file
 1. Edit world
    - Activate the Behavior pack
@@ -12,6 +12,9 @@ A soccer ball add-on for Minecraft Bedrock Edition.
 
 # Usage
 `/give @s soccer:ball_spawn_egg` or `summon soccer:ball`
+
+## Requirements
+Minecraft Bedrock 1.26.0 or newer, with no experiments.
 
 ## Releasing
 Pushing a tag that starts with `v` (for example `git tag v1.0.0 && git push origin v1.0.0`) runs the Release workflow in `.github/workflows/release.yml`, which builds the add-on and attaches `soccer-bedrock.mcaddon` to a GitHub Release.
